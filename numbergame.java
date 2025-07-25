@@ -5,8 +5,9 @@ public class numbergame{
 		Scanner s1= new Scanner(System.in);
 		int guess;
 		int attempts=0;
-		int randomNumber=random.nextInt(1,11);
-		System.out.println("guess no2 between 1 to 10: ");
+		int max=100;
+		int randomNumber=random.nextInt(min, max +1);
+		System.out.println("guess no2 between 1 to 100: ");
 		do{
 			System.out.print("enter a guess: ");
 			guess=s1.nextInt();
@@ -18,7 +19,7 @@ public class numbergame{
 			else if(guess>randomNumber){
 				System.out.println("CORRECT!THE NUMBER WAS"+randomNumber);
 			}else{
-				System.out.println("correct !number was "+randomNumber);
+				System.out.println("correct !number was: "+randomNumber);
 				System.out.println("# of attempts: " + attempts);
 			}
 				
